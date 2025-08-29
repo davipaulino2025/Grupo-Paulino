@@ -1,2 +1,2 @@
 # Grupo-Paulino
-Grupo Paulino relacionado a dependecia quimica alcoolismo e saude mental 
+Grupo Paulino relacionado a dependência quimica alcoolismo e saude mental 
