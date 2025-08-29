@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Paulino - Internação e Remoções Para Dependente Quimico Alcoolismo e Saúde Mental</title>
+    <meta name="description" content="Grupo Paulino: Especializado em dependência quimica alcoolismo e saúde mental, com abordagens personalizadas e profissionais dedicados a apoiar a recuperação eficaz e duradoura.">
+    <meta name="keywords" content="centro terapeutico, dependência quimica, alcoolismo, hospital psiquiatrico, drogas, transtornos mentais, clinica de drogados, clinica de reabilitção em são paulo, reabilitação de dependente quimico, alcoolismo, esquizofrenia, doente da cabeça, pessoa louca, saude mental, tratamento psicologico, terapia, bem-estar, clinica de recuperacao, clinica de reabilitação">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.grupopaulino.com.br">
+    <meta property="og:title" content="Grupo Paulino - Internação e Remoções Para Dependentes Quimicos Alcoolismo e Saúde Mental">
+    <meta property="og:description" content="Grupo Paulino Cuidando de você com acolhimento e profissionalismo Humanizado. Oferecemos tratamentos especializados para dependência química, alcoolismo e saúde mental, ajudando nossos pacientes a recuperar sua qualidade de vida em um ambiente seguro e humano.">
+    <meta property="og:image" content="https://grupopaulino.com.br/fotos/logo-grupo-paulino.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+</head>
+</body>
+
+
+
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0c0b0b42;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* ===================== */
+/* HEADER                */
+/* ===================== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #f4f4f4;
+  border-bottom: 2px solid #ddd;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  flex: 1;
+}
+
+.title h1 {
+  font-size: 22px;
+}
+
+.title p {
+  font-size: 14px;
+}
+
+/* ===================== */
+/* ÍCONE HAMBURGER       */
+/* ===================== */
+.hamburger { 
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #f00909;
+  display: block;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===================== */
+/* MENU DE NAVEGAÇÃO     */
+/* ===================== */
+nav {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+nav.active {
+  display: block;
+}
+
+nav a {
+  display: block;
+  margin: 8px 0;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* ===================== */
+/* HERO IMAGE            */
+/* ===================== */
+.hero {
+  width: 100%;
+  height: 800px;
+  background: url('fotos/medicos.jpg') center/cover no-repeat;
+}
+
+/* ===================== */
+/* CARROSSEL             */
+/* ===================== */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f5f5f5;
+  padding: 10px 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-track img {
+  height: 80px;
+  flex-shrink: 0;
+  filter: grayscale(50%);
+  transition: transform 0.3s;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.carousel-btn.left { left: 10px; }
+.carousel-btn.right { right: 10px; }
+
+/* ===================== */
+/* SOBRE NÓS             */
+/* ===================== */
+.sobre {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.sobre h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ===================== */
+/* UNIDADES              */
+/* ===================== */
+.unidades h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.unidades .carousel img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+.unidades .caption {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ===================== */
+/* FORMULÁRIO            */
+/* ===================== */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #070707;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  background: #0c0e86;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* FOOTER                */
+/* ===================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0c0e86;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+/* ===================== */
+/* LOGO                  */
+/* ===================== */
+img[alt="Logo-Grupo-Paulino"] {
+  width: 120px;
+  height: auto;
+  max-width: 120%;
+  display: block;
+}
+
+/* ===================== */
+/* TÍTULO CONVENIOS       */
+/* ===================== */
+.titulo-convenios {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.titulo-convenios h2 {
+  margin: 5px 0;
+}
+
+/* ===================== */
+/* CARROSSEL UNIDADES    */
+/* ===================== */
+.carousel-unidades {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-unidades > div {
+  min-width: 250px;
+  flex-shrink: 0;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.carousel-unidades > div:hover {
+  transform: scale(1.05);
+}
+
+.carousel-unidades img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ===================== */
+/* ANIMAÇÕES PARTICULAS   */
+/* ===================== */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgb(31, 1, 199);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  animation: explode 1s linear infinite;
+}
+
+@keyframes explode {
+  0% { transform: translate(0,0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--x), var(--y)) scale(0.5); opacity: 0; }
+}
+
+/* ===================== */
+/* EFEITO WOBBLE H1       */
+/* ===================== */
+h1 {
+  position: relative;
+  font-size: 3rem;
+  margin: 10px;
+  text-align: center;
+  z-index: 1;
+  animation: wobble 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes wobble {
+  0% { transform: rotate(-5deg) scale(1); }
+  25% { transform: rotate(5deg) scale(1.05); }
+  50% { transform: rotate(-3deg) scale(1); }
+  75% { transform: rotate(3deg) scale(1.05); }
+  100% { transform: rotate(-5deg) scale(1); }
+}
+
+/* ===================== */
+/* BOTÃO WHATSAPP         */
+/* ===================== */
+.whatsapp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Estilo base dos botões */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+/* Container fixo lado esquerdo */
+.whatsapp-container.left {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column; /* deixa um em cima do outro */
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Botões WhatsApp */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: bounce 2s infinite;
+}
+
+/* Efeito hover */
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Animação bounce */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ===================== */
+/* TEXTO DESTAQUE         */
+/* ===================== */
+.destaque-texto {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.0em;
+  color: #030303;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.1; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* ===================== */
+/* RESPONSIVO             */
+/* ===================== */
+@media (max-width: 1024px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .hero {
+    height: 600px;
+  }
+
+  .carousel-unidades > div {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 500px;
+  }
+
+  .carousel-unidades > div {
+    min-width: 200px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 400px;
+  }
+
+  .carousel-unidades > div {
+    min-width: 150px;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .title h1 {
+    font-size: 18px;
+  }
+
+  .title p {
+    font-size: 12px;
+  }
+}
+
+.logo-grupo-paulino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#logo-grupo-paulino {
+  max-width: 200px;  /* Ajuste para não quebrar no mobile */
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.title h1 {
+  font-size: 1rem; /* Desktop */
+  margin: 3px 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  #logo-grupo-paulino {
+    max-width: 150px; /* reduz um pouco no mobile */
+  }
+
+  .title h1 {
+    font-size: 1.4rem; /* texto menor no mobile */
+  }
+}
+ /* CSS */
+.img-container {
+  width: min(100%, 600px);   /* limita a largura no desktop e ocupa 100% no mobile */
+  aspect-ratio: 16/9;        /* mude para 1/1 (quadrado) ou 4/3, etc. */
+  margin: 16px auto;         /* centraliza horizontalmente */
+  border-radius: 16px;
+  overflow: hidden;           /* esconde excesso da imagem */
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  background: #f3f3f3;       /* cor de fundo enquanto carrega */
+  display: grid;
+  place-items: center;        /* garante centralização do conteúdo */
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* preenche o container sem distorcer */
+  display: block;
+  border-radius: inherit;
+}
+.jump-text {
+  display: flex;
+  flex-wrap: wrap;         /* permite quebrar linha no mobile */
+  justify-content: center; /* centraliza no meio */
+  gap: 4px;                /* espaçamento entre letras */
+  font-weight: bold;
+  text-align: center;
+  font-size: clamp(16px, 4vw, 32px); 
+  /* mínimo 16px, ajusta com tela (4vw), máximo 32px */
+}
+
+.jump-text span {
+  display: inline-block;
+  animation: jump 0.6s ease infinite alternate;
+}
+
+.jump-text span:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+.jump-text span:nth-child(even) {
+  animation-delay: 0.3s;
+}
+
+@keyframes jump {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+.title {
+  text-align: center;      /* Centraliza o texto */
+  display: flex;           /* Ativa o flexbox */
+  flex-direction: column;  /* Coloca um título embaixo do outro */
+  align-items: center;     /* Centraliza no eixo horizontal */
+  justify-content: center; /* Centraliza no eixo vertical se tiver altura definida */
+  margin: 20px auto;       /* Espaçamento automático nas laterais */
+}
+
+.title h1 {
+  margin: 1px 0;           /* Espaçamento entre os títulos */
+}
+.sobre-container {
+  max-width: 900px;       /* largura máxima no desktop */
+  margin: 40px auto;      /* centraliza no meio da página */
+  padding: 20px;          /* espaçamento interno */
+  text-align: center;     /* centraliza o texto */
+  line-height: 1.8;       /* espaço entre linhas */
+  font-size: 1.1rem;      /* tamanho de fonte padrão */
+  color: #222;            /* cor do texto */
+}
+
+.sobre-container p {
+  margin-bottom: 20px;    /* espaço entre parágrafos */
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  .sobre-container {
+    padding: 15px;
+    font-size: 1rem;      /* texto levemente menor */
+    line-height: 1.6;
+  }
+}
+
+.texto-responsivo {
+  font-size: 18px;       /* tamanho padrão para desktop */
+  line-height: 1.6;
+  text-align: justify;   /* ou center se preferir */
+  margin: 20px;
+}
+
+/* Ajuste para telas menores (mobile) */
+@media (max-width: 768px) {
+  .texto-responsivo {
+    font-size: 16px;     /* reduz o tamanho da fonte no mobile */
+    margin: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .texto-responsivo {
+    font-size: 14px;     /* ainda menor para telas pequenas */
+    margin: 10px;
+  }
+}
+
+/* Estilo padrão para mobile (ou menor tela) */
+h1 {
+  font-size: 24px; /* tamanho menor para celular */
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Estilo para desktop (telões e telas maiores) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px; /* tamanho maior para desktop */
+  }
+}
+
+/* Animação do H3 - fade + leve movimento */
+#o-que-oferecemos {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: aparecer 1.2s ease forwards;
+  animation-delay: 0.5s; /* espera meio segundo antes de iniciar */
+}
+
+/* Definição da animação */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação específica para emojis pulando */
+#o-que-oferecemos span {
+  display: inline-block;
+  animation: pulo 1s infinite alternate;
+}
+
+#o-que-oferecemos span:nth-child(2) { animation-delay: 0.1s; }
+#o-que-oferecemos span:nth-child(3) { animation-delay: 0.2s; }
+#o-que-oferecemos span:nth-child(4) { animation-delay: 0.3s; }
+
+@keyframes pulo {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+  /* Botão flutuante Instagram */
+.instagram-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+
+  /* Adicionando animação de bounce */
+  animation: bounce 2s infinite;
+  transition: transform 0.3s;
+}
+
+.instagram-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Keyframes para efeito bounce */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-grupo-paulino">
+  <img id="logo-grupo-paulino" src="fotos/logo-grupo-paulino.png" alt="Logo-Grupo-Paulino">
+</div>
+    <div class="title">
+      <h1>GRUPO PAULINO</h1>
+      <h1>INTERNAÇÕES E REMOÇÕES</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="menu">
+  <a href="#logo-grupo-paulino">Início</a>
+  <a href="#tituloConvenios">Convenios</a>
+  <a href="#sobre-nos">Sobre Nós</a>
+  <a href="#unidades">Unidades</a>
+  <a href="#o-que-oferecemos">O Que Oferecemos</a>
+  <a href="#contato">Contato</a>  
+</nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero"></section>
+     <div class="titulo-convenios" id="tituloConvenios">
+  <h2 style="text-align: center;">Aceitamos Convênios</h2>
+<h2 style="text-align: center;">e Particulares Consulte-nos</h2>
+</div>
+<!-- Botão WhatsApp -->
+<div class="whatsapp-container">
+  <a href="https://wa.me/5519971092679" target="_blank" class="whatsapp-btn">
+    Fale com um especialista
+  </a>
+</div>
+<br><br>
+<!-- CARROSSEL DE CONVÊNIOS -->
+  <section class="carousel">
+  <div class="carousel-track" id="carouselConvenios">
+    <img src="fotos/convenio-bradesco.jpg" alt="Bradesco Saúde">
+    <img src="fotos/convenio-cabesp.jpg" alt="Cabesp">
+    <img src="fotos/convenio-caixa.jpg" alt="Caixa Saúde">
+    <img src="fotos/convenio-careplus.jpg" alt="CarePlus">
+    <img src="fotos/convenio-cassi.jpg" alt="Cassi">
+    <img src="fotos/convenio-gama.jpg" alt="Gama Saúde">
+    <img src="fotos/convenio-geap.jpg" alt="GEAP Saúde">
+    <img src="fotos/convenio-gocare.jpg" alt="GoCare">
+    <img src="fotos/convenio-grandeza.jpg" alt="Grandeza Saúde">
+    <img src="fotos/convenio-itau.jpg" alt="Itaú Saúde">
+    <img src="fotos/convenio-mediaservice.jpg" alt="MediaService">
+    <img src="fotos/convenio-porto.jpg" alt="Porto Seguro">
+    <!-- Duplicação automática para efeito infinito -->
+    <img src="fotos/convenio-bradesco.jpg" alt="Bradesco Saúde">
+    <img src="fotos/convenio-cabesp.jpg" alt="Cabesp">
+    <img src="fotos/convenio-caixa.jpg" alt="Caixa Saúde">
+    <img src="fotos/convenio-careplus.jpg" alt="CarePlus">
+    <img src="fotos/convenio-cassi.jpg" alt="Cassi">
+    <img src="fotos/convenio-gama.jpg" alt="Gama Saúde">
+    <img src="fotos/convenio-geap.jpg" alt="GEAP Saúde">
+    <img src="fotos/convenio-gocare.jpg" alt="GoCare">
+    <img src="fotos/convenio-grandeza.jpg" alt="Grandeza Saúde">
+    <img src="fotos/convenio-itau.jpg" alt="Itaú Saúde">
+    <img src="fotos/convenio-mediaservice.jpg" alt="MediaService">
+    <img src="fotos/convenio-porto.jpg" alt="Porto Seguro">
+  </div>
+</div>
+  </section>
+
+  <!-- SOBRE NÓS -->
+   <br><br>
+   <h2 id="sobre-nos" style="text-align: center;">Sobre Nós</h2>
+  <section class="sobre">
+   <div class="sobre-container">
+  <p>
+    <strong>
+      Grupo Paulino – Internações e Remoções é uma instituição dedicada a oferecer apoio completo e humanizado a pessoas que enfrentam desafios relacionados à dependência química, alcoolismo e saúde mental. Com anos de experiência e uma equipe multidisciplinar especializada, nossa missão é proporcionar tratamentos eficazes, seguros e respeitosos, auxiliando nossos pacientes a reconquistarem sua qualidade de vida e bem-estar.
+    </strong>
+  </p>
+  <p>
+    <strong>
+      Entendemos que cada indivíduo possui uma história única, por isso oferecemos planos personalizados de internação e remoção, garantindo conforto, acompanhamento médico constante e suporte psicológico durante todo o processo. Nosso foco vai além do tratamento: buscamos promover a recuperação integral, fortalecendo vínculos familiares e incentivando a reintegração saudável à sociedade.
+    </strong>
+  </p>
+  <p>
+    <strong>
+      No Grupo Paulino, combinamos profissionalismo, ética e empatia, garantindo que cada pessoa atendida seja acolhida com respeito e dignidade. Estamos prontos para oferecer orientação, transporte seguro e acompanhamento especializado, tornando a jornada de recuperação mais segura e eficaz.
+    </strong>
+  </p>
+</div>
+</section>
+
+  <!-- NOSSAS UNIDADES -->
+   <br><br>
+   <h2 id="unidades" style="text-align: center;">
+  Nossas Unidades<br>
+  Femininas e Masculinas
+</h2>
+   <br><br>
+  <section class="unidades">
+    <div class="carousel">
+  <button class="carousel-btn left" onclick="moveCarousel('unidades', -1)">&#10094;</button>
+  <div class="carousel-unidades" id="carouselUnidades">
+    <div>
+  <a href="unidade1.html" style="text-decoration: none; color: inherit;">
+    <img src="fotos/unidade1.jpg" alt="Unidade 1">
+    <p class="caption">Unidade 1</p>
+  </a>
+</div>
+    <div>
+      <a href="unidade2.html" style="text-decoration: none; color: inherit;">
+      <img src="fotos/unidade2.jpg" alt="unidade2">
+      <p class="caption">Unidade 2</p>
+      </a>
+    </div>
+    <div>
+      <a href="unidade3.html" style="text-decoration: none; color: inherit;">
+      <img src="fotos/unidade3.jpg" alt="unidade3">
+      <p class="caption">Unidade 3</p>
+      </a>
+    </div>
+    <div>
+      <a href="unidade4.html" style="text-decoration: none; color: inherit;">
+      <img src="fotos/unidade4.jpeg" alt="unidade4">
+      <p class="caption">Unidade 4</p>
+      </a>
+    </div>
+     <div>
+      <a href="unidade5.html" style="text-decoration: none; color: inherit;">
+      <img src="fotos/unidade5.jpg" alt="unidade5">
+      <p class="caption">Unidade 5</p>
+      </a>
+    </div>
+  </div>
+  <button class="carousel-btn right" onclick="moveCarousel('unidades', 1)">&#10095;</button>
+</div>
+<br><br>
+<div class="img-container">
+  <img src="fotos/ambulancia.jpg" alt="Descrição da imagem">
+</div>
+<div class="p-container">
+<p class="jump-text">
+  <span>R</span><span>E</span><span>M</span><span>O</span><span>Ç</span><span>Õ</span><span>E</span><span>S</span>
+  <span>2</span><span>4</span>
+  <span>H</span><span>O</span><span>R</span><span>A</span><span>S</span>
+  </p> 
+  <p class="jump-text">
+  <span>E</span><span>M</span>
+  <span>T</span><span>O</span><span>D</span><span>O</span>
+  <span>T</span><span>E</span><span>R</span><span>R</span><span>I</span><span>T</span><span>Ó</span><span>R</span><span>I</span><span>O</span>
+  <span>N</span><span>A</span><span>C</span><span>I</span><span>O</span><span>N</span><span>A</span><span>L</span>
+  <span>!</span><span>!</span><span>!</span>
+</p>
+</div>
+<!-- Botão WhatsApp -->
+<div class="whatsapp-container">
+  <a href="https://wa.me/5519971092679" target="_blank" class="whatsapp-btn">
+    Fale com um especialista
+  </a>
+</div>
+
+<!-- SOBRE NÓS -->
+   <br><br><br>
+   <h3 id="o-que-oferecemos" style="text-align: center;">
+  Nossos Cuidados e Tratamentos<br>
+  <span>👇🏻</span><span>👇🏻</span><span>👇🏻</span>
+</h3>
+  <section class="o-que-oferecemos">
+   <div class="o-que-oferecemos-container">
+</section>
+<div class="img-container">
+  <img src="fotos/acompanhamento_Psicologico.jpg" alt="Descrição da imagem">
+</div>
+<br>
+<p class="jump-text">
+  🧠 Acompanhamento Psicológico e Psiquiátrico
+</p>
+<p class="texto-responsivo">
+  Acompanhamento psicológico e psiquiátrico para cuidar da sua saúde mental de forma completa. Nossos profissionais oferecem suporte especializado, acompanhamento contínuo e estratégias personalizadas para promover equilíbrio emocional, bem-estar e qualidade de vida 🧠✨.
+</p>
+<br>
+</div>
+<div class="img-container">
+  <img src="fotos/tratamento-alcoolismo.jpg" alt="Descrição da imagem">
+</div>
+<br>
+<p class="jump-text">
+🥃 Tratamento Alcoolismo
+</p>
+<p class="texto-responsivo">
+Nosso centro de reabilitação do alcoolismo oferece tratamento alcoolismo para você vencer o desejo do consumo de bebida alcoólica de maneira descontrolada.</p>
+</div>
+<br>
+<div class="img-container">
+  <img src="fotos/tratamento-dependente-quimico.jpg" alt="Descrição da imagem">
+</div>
+<br>
+<p class="jump-text">
+💊 Tratamento para dependentes químicos
+</p>
+<p class="texto-responsivo">
+  A dependência química é uma doença e a clínica para dependentes químicos é a melhor forma de se livrar do vício das drogas.</p>
+</div>
+<br>
+<div class="img-container">
+  <img src="fotos/tratamento-para-mulheres.jpg" alt="Descrição da imagem">
+</div>
+<br>
+<p class="jump-text">
+🙎🏽‍♀️ Tratamento para mulheres
+</p>  
+<p class="texto-responsivo">
+Além do tratamento para drogados e alcoólatras que alcança resultados incríveis possuímos o melhor tratamento da dependência química e alcoólica para mulheres.</p>
+</div>
+<br>
+<div class="img-container">
+  <img src="fotos/tratamento-para-menores.jpg" alt="Descrição da imagem">
+</div>
+<br>
+<p class="jump-text">
+👦🏻 Tratamento para menores
+</p>
+<p class="texto-responsivo">
+O tratamento para menores na clínica de reabilitação para alcoólatras e dependentes químicos é a principal maneira de combater o aumento do número de viciados em drogas na menor idade.</p>
+</div>
+<br>
+<div class="img-container">
+  <img src="fotos/tratamento-involuntario.jpg" alt="Descrição da imagem">
+</div>
+<br>
+<p class="jump-text">
+✋🏼  Tratamento involuntário
+</p>
+<p class="texto-responsivo">
+A internação involuntária acontece quando a família busca ajuda para tratamento de uma pessoa ou parente que precisa do suporte de uma clínica de recuperação da dependência química ou alcoolismo.</p>
+</div>
+<br>
+<div class="img-container">
+  <img src="fotos/tratamento-voluntario.jpg" alt="Descrição da imagem">
+</div>
+<br>
+<p class="jump-text">
+🕊️ Tratamento voluntário
+</p>
+<p class="texto-responsivo">
+Com certeza o tratamento voluntário produz os melhores resultados nos pacientes que buscam ajuda em nossa clínica de reabilitação para dependentes químicos e alcoolismo.</p>
+</div>
+<br>
+
+  </section>
+<br><br><br>
+  <!-- FORMULÁRIO -->
+   
+  
+
+  <h2 id="contato" style="text-align: center;">
+    Contato</h2>
+    <p class="destaque-texto">
+  Sinta-se à vontade para entrar em contato em caso de dúvidas ou, se preferir, fale com nossa equipe pelo WhatsApp.
+</p>
+<div class="form-container">
+    <form action="https://formsubmit.co/davipaulinods2021@gmail.com" method="POST">
+        <div class="form-group-inline">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
+        </div>
+
+        <!-- Configurações do FormSubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://www.affaprogramacaodesites.com.br/obrigado.html">
+
+        <button type="submit" class="btn-enviar">ENVIAR</button>
+    </form>
+</div>
+</section>
+
+<!-- Botões WhatsApp esquerdo -->
+<div class="whatsapp-container left">
+  <a href="https://wa.me/5519971092679" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://wa.me/5511995425578" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+   <!-- Botão Instagram -->
+  <a href="https://www.instagram.com/grupopaulinointernacoes?igsh=MWFiaTAxYzNqMnY0aA==" target="_blank" class="instagram-btn">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 GRUPO PAULINO. Todos Direitos Reservados.</p>
+  </footer>
+
+  <script>
+    // Menu hamburguer
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+
+    // Controle de múltiplos carrosséis
+    let indices = { convenios: 0, unidades: 0 };
+
+    function moveCarousel(type, direction) {
+      const track = document.getElementById("carousel" + capitalize(type));
+      const items = track.children.length;
+      const itemWidth = track.children[0].offsetWidth + 20; // largura + margem
+
+      indices[type] += direction;
+      if (indices[type] < 0) indices[type] = items - 1;
+      if (indices[type] >= items) indices[type] = 0;
+
+      track.style.transform = `translateX(${-indices[type] * itemWidth}px)`;
+    }
+
+    function capitalize(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
+    // Função para criar partículas ao redor de um elemento
+function createParticles(textElement, count) {
+  for (let i = 0; i < count; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+
+    // posição inicial no centro do texto
+    const rect = textElement.getBoundingClientRect();
+    particle.style.left = rect.left + rect.width/2 + 'px';
+    particle.style.top = rect.top + rect.height/2 + 'px';
+
+    // direção aleatória
+    const angle = Math.random() * 2 * Math.PI;
+    const distance = 100 + Math.random() * 50; // distância do centro
+    particle.style.setProperty('--x', distance * Math.cos(angle) + 'px');
+    particle.style.setProperty('--y', distance * Math.sin(angle) + 'px');
+
+    document.body.appendChild(particle);
+
+    // remover após animação
+    setTimeout(() => particle.remove(), 1000);
+  }
+}
+
+// Criar partículas a cada 200ms
+setInterval(() => {
+  document.querySelectorAll('h1').forEach(el => createParticles(el, 20));
+}, 200);
+
+const carousel = document.getElementById('carouselUnidades');
+const slides = Array.from(carousel.children);
+const slideWidth = slides[0].offsetWidth + 20; // largura do slide + gap
+
+// Duplica os slides para efeito infinito
+carousel.innerHTML += carousel.innerHTML;
+
+let index = 0;
+let isMoving = false;
+
+// Função para mover o carrossel
+function moveCarouselAuto(direction = 1) {
+  if (isMoving) return;
+  isMoving = true;
+
+  index += direction;
+  carousel.style.transition = 'transform 0.5s linear';
+  carousel.style.transform = `translateX(${-index * slideWidth}px)`;
+
+  // Quando chegar no final duplicado, reseta instantaneamente
+  if (index >= slides.length) {
+    setTimeout(() => {
+      carousel.style.transition = 'none';
+      index = 0;
+      carousel.style.transform = `translateX(0px)`;
+    }, 500);
+  }
+
+  if (index < 0) {
+    setTimeout(() => {
+      carousel.style.transition = 'none';
+      index = slides.length - 1;
+      carousel.style.transform = `translateX(${-index * slideWidth}px)`;
+    }, 500);
+  }
+
+  setTimeout(() => { isMoving = false; }, 500);
+}
+
+// Botões continuam funcionando
+document.querySelector('.carousel-btn.left').addEventListener('click', () => moveCarouselAuto(-1));
+document.querySelector('.carousel-btn.right').addEventListener('click', () => moveCarouselAuto(1));
+
+// Movimento automático contínuo
+setInterval(() => moveCarouselAuto(1), 3000); // muda a cada 3s
+
+
+  </script>
+
+</body>
+</html>

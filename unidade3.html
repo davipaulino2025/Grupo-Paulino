@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Paulino - Unidade 3 Galeria De Fotos</title>
+  <meta name="description" content="Grupo Paulino: Especializado em dependência quimica alcoolismo e saúde mental, com abordagens personalizadas e profissionais dedicados a apoiar a recuperação eficaz e duradoura.">
+  <meta name="keywords" content="centro terapeutico, dependência quimica, alcoolismo, hospital psiquiatrico, drogas, transtornos mentais, clinica de drogados, clinica de reabilitção em são paulo, reabilitação de dependente quimico, alcoolismo, esquizofrenia, doente da cabeça, pessoa louca, saude mental, tratamento psicologico, terapia, bem-estar, clinica de recuperacao, clinica de reabilitação">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.grupopaulino.com.br">
+  <meta property="og:title" content="Grupo Paulino - Internação e Remoções Para Dependentes Quimicos Alcoolismo e Saúde Mental">
+  <meta property="og:description" content="Grupo Paulino Cuidando de você com acolhimento e profissionalismo Humanizado. Oferecemos tratamentos especializados para dependência química, alcoolismo e saúde mental, ajudando nossos pacientes a recuperar sua qualidade de vida em um ambiente seguro e humano.">
+  <meta property="og:image" content="https://grupopaulino.com.br/fotos/logo-grupo-paulino.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-grupo-paulino">
+      <img id="logo-grupo-paulino" src="fotos/logo-grupo-paulino.png" alt="Logo-Grupo-Paulino">
+    </div>
+    <div class="title">
+      <h1>GRUPO PAULINO</h1>
+      <h1>INTERNAÇÕES E REMOÇÕES</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="menu">
+      <a href="#logo-grupo-paulino">Início</a>
+      <a href="index.html">Página Inicial</a>
+      <a href="unidade1.html">Unidade 1</a>
+      <a href="unidade2.html">Unidade 2</a>
+      <a href="unidade4.html">Unidade 4</a>
+      <a href="unidade5.html">Unidade 5</a>
+    </nav>
+  </header>
+
+  <!-- GALERIA DE IMAGENS -->
+  <div class="container">
+    <div class="img-box"><img src="unidade3/imagem1.jpg" alt="Imagem 1"></div>
+    <div class="img-box"><img src="unidade3/imagem2.jpg" alt="Imagem 2"></div>
+    <div class="img-box"><img src="unidade3/imagem3.jpg" alt="Imagem 3"></div>
+    <div class="img-box"><img src="unidade3/imagem4.jpg" alt="Imagem 4"></div>
+    <div class="img-box"><img src="unidade3/imagem5.jpg" alt="Imagem 5"></div>
+    <div class="img-box"><img src="unidade3/imagem6.jpg" alt="Imagem 6"></div>
+    <div class="img-box"><img src="unidade3/imagem7.jpg" alt="Imagem 7"></div>
+    <div class="img-box"><img src="unidade3/imagem8.jpg" alt="Imagem 8"></div>
+    <div class="img-box"><img src="unidade3/imagem9.jpg" alt="Imagem 9"></div>
+  </div>
+
+<!-- Botões WhatsApp esquerdo -->
+<div class="whatsapp-container left">
+  <a href="https://wa.me/5519971092679" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://wa.me/5511995425578" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+   <!-- Botão Instagram -->
+  <a href="https://www.instagram.com/grupopaulinointernacoes?igsh=MWFiaTAxYzNqMnY0aA==" target="_blank" class="instagram-btn">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 GRUPO PAULINO. Todos Direitos Reservados.</p>
+  </footer>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { background: #0c0b0b42; color: #000; line-height: 1.6; }
+
+    /* HEADER */
+    header { display:flex; align-items:center; justify-content:space-between; padding:15px 30px; background:#f4f4f4; border-bottom:2px solid #ddd; flex-wrap:wrap; position:relative; }
+    .logo-grupo-paulino { display:flex; justify-content:center; align-items:center; margin:10px auto; text-align:center; }
+    #logo-grupo-paulino { max-width:200px; width:100%; height:auto; }
+    .title { text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; margin:20px auto; }
+    .title h1 { margin:1px 0; font-size:1rem; }
+    @media (max-width:768px) { #logo-grupo-paulino { max-width:150px; } .title h1 { font-size:1.4rem; } }
+
+    /* HAMBURGER */
+    .hamburger { cursor:pointer; display:flex; flex-direction:column; gap:4px; position:fixed; top:20px; right:20px; z-index:1000; }
+    .hamburger span { width:25px; height:3px; background:#cc0a0a; border-radius:2px; transition:all 0.3s ease; }
+    .hamburger.active span:nth-child(1) { transform:rotate(45deg) translate(5px,5px); }
+    .hamburger.active span:nth-child(2) { opacity:0; }
+    .hamburger.active span:nth-child(3) { transform:rotate(-45deg) translate(5px,-5px); }
+
+    /* MENU */
+    nav { display:none; position:fixed; top:60px; right:20px; background:#fff; border:1px solid #ddd; padding:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:999; }
+    nav.active { display:block; }
+    nav a { display:block; margin:8px 0; text-decoration:none; color:#333; transition:color 0.2s; }
+    nav a:hover { color:#007bff; }
+
+    /* FOOTER */
+    footer { text-align:center; padding:20px; background:#0c0e86; margin-top:30px; color:#fff; }
+
+    /* PARTICULAS */
+    .particle { position:absolute; width:6px; height:6px; background:rgb(31,1,199); border-radius:50%; pointer-events:none; z-index:0; opacity:0; animation:explode 1s linear infinite; }
+    @keyframes explode { 0% { transform:translate(0,0) scale(1); opacity:1; } 100% { transform:translate(var(--x), var(--y)) scale(0.5); opacity:0; } }
+
+    /* GALERIA */
+    .container { display:flex; flex-direction:column; gap:15px; padding:15px; max-width:600px; margin:0 auto; }
+    .img-box { overflow:hidden; border-radius:10px; opacity:0; transform:translateY(30px); transition: all 0.6s ease; }
+    .img-box.visible { opacity:1; transform:translateY(0); }
+    .img-box img { width:100%; height:auto; display:block; transition: transform 0.3s ease; }
+    .img-box img:hover { transform:scale(1.05); }
+
+    .jump-text {
+  display: flex;
+  flex-wrap: wrap;         /* permite quebrar linha no mobile */
+  justify-content: center; /* centraliza no meio */
+  gap: 4px;                /* espaçamento entre letras */
+  font-weight: bold;
+  text-align: center;
+  font-size: clamp(16px, 4vw, 32px); 
+  /* mínimo 16px, ajusta com tela (4vw), máximo 32px */
+}
+
+.jump-text span {
+  display: inline-block;
+  animation: jump 0.6s ease infinite alternate;
+}
+
+.jump-text span:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+.jump-text span:nth-child(even) {
+  animation-delay: 0.3s;
+}
+/* ===================== */
+/* EFEITO WOBBLE H1       */
+/* ===================== */
+h1 {
+  position: relative;
+  font-size: 3rem;
+  margin: 10px;
+  text-align: center;
+  z-index: 1;
+  animation: wobble 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes wobble {
+  0% { transform: rotate(-5deg) scale(1); }
+  25% { transform: rotate(5deg) scale(1.05); }
+  50% { transform: rotate(-3deg) scale(1); }
+  75% { transform: rotate(3deg) scale(1.05); }
+  100% { transform: rotate(-5deg) scale(1); }
+}
+ /* Botão flutuante Instagram */
+.instagram-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+
+  /* Adicionando animação de bounce */
+  animation: bounce 2s infinite;
+  transition: transform 0.3s;
+}
+
+.instagram-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Keyframes para efeito bounce */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Estilo base dos botões */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+/* Container fixo lado esquerdo */
+.whatsapp-container.left {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column; /* deixa um em cima do outro */
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Botões WhatsApp */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: bounce 2s infinite;
+}
+
+/* Efeito hover */
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Animação bounce */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+}
+  </style>
+
+  <script>
+    // Menu hamburguer
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+
+    // Partículas
+    function createParticles(textElement, count) {
+      for (let i=0;i<count;i++){
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        const rect = textElement.getBoundingClientRect();
+        particle.style.left = rect.left + rect.width/2 + 'px';
+        particle.style.top = rect.top + rect.height/2 + 'px';
+        const angle = Math.random()*2*Math.PI;
+        const distance = 100 + Math.random()*50;
+        particle.style.setProperty('--x', distance*Math.cos(angle)+'px');
+        particle.style.setProperty('--y', distance*Math.sin(angle)+'px');
+        document.body.appendChild(particle);
+        setTimeout(()=>particle.remove(),1000);
+      }
+    }
+    setInterval(()=>{
+      document.querySelectorAll('h1').forEach(el=>createParticles(el,20));
+    },200);
+
+    // Scroll animação imagens
+    const images = document.querySelectorAll('.img-box');
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },{threshold:0.1});
+    images.forEach(img=>observer.observe(img));
+    // Função para criar partículas ao redor de um elemento
+function createParticles(textElement, count) {
+  for (let i = 0; i < count; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+
+    // posição inicial no centro do texto
+    const rect = textElement.getBoundingClientRect();
+    particle.style.left = rect.left + rect.width/2 + 'px';
+    particle.style.top = rect.top + rect.height/2 + 'px';
+
+    // direção aleatória
+    const angle = Math.random() * 2 * Math.PI;
+    const distance = 100 + Math.random() * 50; // distância do centro
+    particle.style.setProperty('--x', distance * Math.cos(angle) + 'px');
+    particle.style.setProperty('--y', distance * Math.sin(angle) + 'px');
+
+    document.body.appendChild(particle);
+
+    // remover após animação
+    setTimeout(() => particle.remove(), 1000);
+  }
+}
+
+// Criar partículas a cada 200ms
+setInterval(() => {
+  document.querySelectorAll('h1').forEach(el => createParticles(el, 20));
+}, 200);
+  </script>
+
+</body>
+</html>
